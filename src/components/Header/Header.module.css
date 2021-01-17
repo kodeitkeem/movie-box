@@ -1,0 +1,16 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #111111;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.Logo {
+    height: 100%;
+    pointer-events: none;
+    width: 220px;
+    margin-right: auto;
+    margin-left: 50px;
+}
