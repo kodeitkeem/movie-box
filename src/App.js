@@ -25,7 +25,7 @@ function App() {
               <SignupPage {...props}/>
             } />
             <Route exact path="/login" render={props => 
-              <LoginPage />
+              <LoginPage {...props}/>
             } />
           </Switch>
         </main>
