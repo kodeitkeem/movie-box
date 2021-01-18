@@ -1,12 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import HomePage from './pages/HomePage';
+import DashboardPage from './pages/HomePage';
+import SignupPage from './pages/HomePage';
+import LoginPage from './pages/HomePage';
+
+import {Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <Header />
+        <main>
+          <Switch>
+            <Route exact path="/" render={props => 
+              <HomePage />
+            } />
+            <Route exact path="/dashboard" render={props => 
+              <DashboardPage />
+            } />
+            <Route exact path="/signup" render={props => 
+              <SignupPage />
+            } />
+            <Route exact path="/login" render={props => 
+              <LoginPage />
+            } />
+          </Switch>
+        </main>
+      <Footer />
     </div>
   );
 }
