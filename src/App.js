@@ -46,10 +46,10 @@ function App(props) {
                 <Redirect to="/login" />
             } />
             <Route exact path="/signup" render={props => 
-              <SignupPage {...props}/>
+              <SignupPage {...props} handleSignupOrLogin={handleSignupOrLogin}/>
             } />
             <Route exact path="/login" render={props => 
-              <LoginPage {...props}/>
+              <LoginPage {...props} handleSignupOrLogin={handleSignupOrLogin}/>
             } />
           </Switch>
         </main>

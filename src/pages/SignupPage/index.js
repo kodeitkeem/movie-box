@@ -28,6 +28,9 @@ function SignupPage(props){
             await signup(formState);
 
             setFormState(getInitialFormState());
+
+            props.handleSignupOrLogin();
+            
             props.history.push('/dashboard');
         } catch (error) {
             alert(error.message);
