@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import {LinkContainer} from 'react-router-bootstrap'
 
  function Header(props) {
     return (
@@ -26,21 +27,29 @@ import Container from 'react-bootstrap/Container';
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                         <Button variant="outline-info"><i class="fas fa-search"></i>Search</Button>
                       </Form>
-                      <Nav.Link to="/dashboard">
+                      <LinkContainer to="/dashboard">
+                        <Nav.Link >
                           My Profile
-                      </Nav.Link>
-                      <Nav.Link to="" onClick={props.handleLogout}>
-                          Logout
-                      </Nav.Link>
+                        </Nav.Link>
+                      </LinkContainer>
+                      <LinkContainer to="" onClick={props.handleLogout}>
+                        <Nav.Link >
+                            Logout
+                        </Nav.Link>
+                      </LinkContainer>
                     </>
                     :
                     <>
-                      <Nav.Link className={styles.NavLink} to="/login">
-                        Login
-                      </Nav.Link>
-                      <Nav.Link className={styles.NavLink} to="/signup">
-                        Signup
-                      </Nav.Link>
+                      <LinkContainer to="/login">
+                        <Nav.Link className={styles.NavLink} >
+                          Login
+                        </Nav.Link>
+                      </LinkContainer>
+                      <LinkContainer to="/signup">
+                        <Nav.Link className={styles.NavLink} >
+                          Signup
+                        </Nav.Link>
+                      </LinkContainer>
                     </>
                   }
               </Nav>
