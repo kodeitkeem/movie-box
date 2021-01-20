@@ -4,7 +4,7 @@
       <text id="MOVIE" transform="translate(36 295)" fill="#fff" font-size="104" font-family="Homoarakhn"><tspan x="0" y="0">MOVIE</tspan></text>
     </g>
     <g id="Group_1" data-name="Group 1">
-      <rect id="Rectangle_1" data-name="Rectangle 1" width="431" height="306" transform="translate(524 97)" fill="#f7e945"/>
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="431" height="306" transform="translate(524 97)" fill="#e50a14"/>
       <text id="BOX" transform="translate(574 295)" fill="#fff" font-size="104" font-family="Homoarakhn"><tspan x="0" y="0">BOX</tspan></text>
     </g>
   </g>
