@@ -1,13 +1,10 @@
-const BASE_URL = 'https://unogs-unogs-v1.p.rapidapi.com/api.cgi?t=genres';
+/* const BASE_URL = 'https://api.themoviedb.org/3/genre/movie/list?api_key='
+const API_KEY = 'e1aceb53142b1701d29b1d5b96ba0a76';
 
 export function getContentInfo(){
-    return fetch(BASE_URL, {
-        "method" : "GET",
-        "headers" : {
-            "x-rapidapi-key": "91963772b5msh1a7796214c78afdp133b77jsnd25c292bcfd0",
-		    "x-rapidapi-host": "unogs-unogs-v1.p.rapidapi.com"
-        }
-    }).then(res => res.json()).catch(err => {
+    return fetch(BASE_URL + API_KEY).then(res => res.json()).catch(err => {
         console.log(err)
     });
 }
+
+*/
