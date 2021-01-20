@@ -1,28 +1,9 @@
-.Header {
+.Navbar {
+    background-color: #111111 !important;
     display: flex;
-    justify-content: space-between;
-    background-color: #111111;
+    justify-content: center;
     align-items: center;
-    font-size: 18px;
-    color: white;
-    padding: 0 15px;
 }
-
-.Header > nav > ul {
-    list-style: none;
-    display: flex;
-}
-
-.Header > nav > ul li {
-    margin-right: 40px;
-    font-size: 16px;
-}
-
-.Header > nav > ul li a {
-    text-decoration: none;
-    color: #FFF;
-}
-
 
 .Logo {
     height: 100%;
@@ -30,5 +11,13 @@
     width: 220px;
     margin-right: auto;
     margin-left: 50px;
+}
+
+.NavLink {
+    color: #FFFFFF !important;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Homoarakhn', sans-serif;
 }
 
