@@ -57,11 +57,10 @@ function App(props) {
 
   return (
     <div className="App">
-      <Header handleLogout={handleLogout} user={userSate.user}/>
         <main>
           <Switch>
           <Route exact path="/" render={props => 
-              <PrePaywallPage />
+              <PrePaywallPage handleLogout={handleLogout} user={userSate.user}/>
             } />
             <Route exact path="/home" render={props => 
               userSate.user ?
