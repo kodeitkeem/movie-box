@@ -1,5 +1,5 @@
 .Navbar {
-    background-color: #111111 !important;
+    background-color: transparent !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,6 @@
     pointer-events: none;
     width: 220px;
     margin-right: auto;
-    margin-left: 50px;
 }
 
 .NavLink {
