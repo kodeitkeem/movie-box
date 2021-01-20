@@ -1,0 +1,20 @@
+.Btn {
+    background-color: #E50A14 !important;
+    padding: 15px 45px !important;
+    border: none !important;
+    font-weight: 600 !important;
+}
+
+.Btn a {
+    color: #FFFFFF;
+}
+
+.Btn a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Btn:hover {
+    background-color: #B5070F !important;
+    color: #FFFFFF;
+}
