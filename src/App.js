@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { getUser,logout } from './services/userService';
 import {useEffect } from 'react';
-import { getContentInfo } from './services/net-api';
+import { getMovieEndpoint } from './services/net-api';
 
 import './App.css';
 import Header from './components/Header';
@@ -20,23 +20,22 @@ import {Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
 function App(props) {
 
-  /*
-  const [movieData, setMovieData ] = useState({
-    COUNT: "",
-    ITEMS: []
-  })
+  // const [movieData, setMovieData ] = useState([]);
+  // const [genres, setGenres] = useState([]);
+  // const [ monveGenres, setMovieGenres ] = useState([]);
+  
 
-  async function getAppData(){
-    const data = await getContentInfo();
-    setMovieData(data);
-    console.log(data);
-  }
+  // async function getMovieData(){
+  //   const data = await getMovieEndpoint();
+  //   setMovieData(data);
+  //   console.log(data);
+  // }
 
-  useEffect(() => {
-    getAppData();
-  }, []);
+  // useEffect(() => {
+  //   getMovieData();
+  // }, []);
 
-*/
+
   const [ userSate, setUserState ] = useState({
     user: getUser()
   });
@@ -64,13 +63,13 @@ function App(props) {
             } />
             <Route exact path="/home" render={props => 
               userSate.user ?
-                <HomePage />
+                <HomePage handleLogout={handleLogout} user={userSate.user} />
                 :
                 <Redirect to="/login" />
             } />
             <Route exact path="/dashboard" render={props => 
               userSate.user ?
-                <DashboardPage />
+                <DashboardPage handleLogout={handleLogout} user={userSate.user} />
                 :
                 <Redirect to="/login" />
             } />

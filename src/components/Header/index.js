@@ -21,24 +21,26 @@ import {LinkContainer} from 'react-router-bootstrap'
               </Navbar.Brand>
               <Nav className="ml-auto">
                   {
-                    props.user ? 
-                    <>
+                    props.user ?
+                 <>
                       <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                         <Button variant="outline-info"><i class="fas fa-search"></i>Search</Button>
                       </Form>
                       <LinkContainer to="/dashboard">
-                        <Nav.Link >
+                        <Nav.Link className={styles.NavLink}>
                           My Profile
                         </Nav.Link>
                       </LinkContainer>
                       <LinkContainer to="" onClick={props.handleLogout}>
-                        <Nav.Link >
+                        <Nav.Link className={styles.NavLink}>
                             Logout
                         </Nav.Link>
                       </LinkContainer>
                     </>
+
                     :
+                    
                     <>
                       <LinkContainer to="/login">
                         <Nav.Link className={styles.NavLink} >
@@ -51,6 +53,7 @@ import {LinkContainer} from 'react-router-bootstrap'
                         </Nav.Link>
                       </LinkContainer>
                     </>
+                  
                   }
               </Nav>
             </Navbar>

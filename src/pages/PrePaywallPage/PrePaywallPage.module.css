@@ -25,6 +25,7 @@
 .Jumbotron > p {
     font-size: 1.626rem;
     color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Accordion {
@@ -44,20 +45,20 @@
 .Faqs h2 {
     font-size: 2.5rem;
     color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Faqs h3 {
     font-size: 1.5rem;
     color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Card {
-    background: #111111;
+    background-color: #111111 !important;
     color: #FFFFFF;
     padding: 15px 25px;
     font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.CardHeader {
-    background-color: #111111 !important;
-}

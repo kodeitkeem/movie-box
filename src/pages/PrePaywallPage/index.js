@@ -35,7 +35,7 @@ function PrePaywallPage(props){
     return (
         <>
             <div className={styles.Background}>
-            <Header />
+            <Header handleLogout={props.handleLogout} user={props.user}/>
             <Jumbotron className={styles.Jumbotron}>
                 <h1>It's not about what you watch... <br /> it's about how you watch</h1>
                 <p>Watch anytime, anywhere.. but you can never cancel sorry </p>
@@ -47,13 +47,13 @@ function PrePaywallPage(props){
                     <h2>Dont know why you'd ask but..</h2>
                     <h3>Here are some FAQs</h3>
                     <Accordion defaultActiveKey="0" className={styles.Accordion}>
-                        {CardInfo.map((question)=> (
-                            <Card className={styles.Card}>
+                        {CardInfo.map((question, idx)=> (
+                            <Card className={styles.Card} key={idx}>
                                 <Accordion.Toggle className={styles.CardHeader} as={Card.Header} eventKey={question.id}>
                                 {question.question}
                                 </Accordion.Toggle>
-                                <Accordion.Collapse eventKey={question.id}>
-                                <Card.Body>{question.answer}</Card.Body>
+                                <Accordion.Collapse eventKey={question.id} >
+                                <Card.Body >{question.answer}</Card.Body>
                                 </Accordion.Collapse>
                             </Card>
                         ))}

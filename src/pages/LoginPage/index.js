@@ -28,7 +28,7 @@ function LoginPage(props){
 
             props.handleSignupOrLogin();
             
-            props.history.push('/dashboard');
+            props.history.push('/home');
         } catch (error) {
             alert(error.message);
         }

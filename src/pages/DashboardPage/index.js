@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 function DashboardPage(props){
     return (
-        <Container fluid>
+        <Container>
             <Row>
                 <Col>1 of 1</Col>
             </Row>
