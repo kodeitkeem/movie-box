@@ -1,0 +1,13 @@
+.Row {
+    display: flex;
+    align-items: left;
+    margin: 60px 0px 20px;
+}
+
+
+.MoviesRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: left;
+}
