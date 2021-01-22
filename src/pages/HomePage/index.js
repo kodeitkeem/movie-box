@@ -14,7 +14,7 @@ import SciFiRow from '../../components/SciFiRow';
 function HomePage(props){
 
     return (
-        <div>
+        <div className={styles.Background}>
             <Header handleLogout={props.handleLogout} user={props.user}/>
             <Container >
                 <MovieRow title="Now Trending"/>
