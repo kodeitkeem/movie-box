@@ -25,7 +25,6 @@ import {LinkContainer} from 'react-router-bootstrap'
                  <>
                       <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-info"><i class="fas fa-search"></i>Search</Button>
                       </Form>
                       <LinkContainer to="/dashboard">
                         <Nav.Link className={styles.NavLink}>

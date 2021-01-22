@@ -1,21 +1,21 @@
-import { getMovieEndpoint } from '../../services/net-api';
+import { getFamily } from '../../services/net-api';
 import MovieCard from '../../components/MovieCard';
-import Row from 'react-bootstrap/Row';
-import styles from './MovieRow.module.css';
+import styles from '../../components/MovieRow/MovieRow.module.css';
 import { useState, useEffect } from 'react';
 import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 
-function MovieRow(props) {
+function FamilyRow(props) {
 
     const [movieData, setMovieData ] = useState({
         page: 1,
         results: []
     });
 
-  
+
   async function getMovieData(){
-    const data = await getMovieEndpoint();
+    const data = await getFamily();
     setMovieData(data);
     console.log(data);
   }
@@ -41,4 +41,4 @@ function MovieRow(props) {
 
 }
 
-export default MovieRow;
+export default FamilyRow;
