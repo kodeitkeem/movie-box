@@ -1,5 +1,11 @@
 import { useState } from 'react';
 import { signup } from '../../services/userService';
+import Header from '../../components/Header';
+import { Container, Row, Col } from 'react-bootstrap';
+import styles from '../../pages/LoginPage/LoginPage.module.css';
+import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
+
 
 function SignupPage(props){
 
@@ -38,14 +44,45 @@ function SignupPage(props){
     }
 
     return (
-        <div className="Page">
-            <form onSubmit={handleSubmit}>
-                <input value={formState.firstName} onChange={handleChange} name="firstName" type="text"/>
-                <input value={formState.lastName} onChange={handleChange} name="lastName" type="text"/>
-                <input value={formState.email} onChange={handleChange} name="email" type="email"/>
-                <input value={formState.password} onChange={handleChange} name="password" type="password"/>
-                <button>Sign Up</button>
-            </form>
+        <div className={styles.Background}>
+            <Header handleLogout={props.handleLogout} user={props.user}/>
+                <Container>
+                    <div className={styles.FormContainer}>
+                        <h2>You're just one step away!</h2>
+                        <h5>Subscribe today and recieve 2% off</h5>
+                        <Form onSubmit={handleSubmit}>
+                            <Form.Row>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label className={styles.FormLabel}>First Name</Form.Label>
+                                        <Form.Control className={styles.FormControl} value={formState.firstName} onChange={handleChange} placeholder="Enter your first name" name="firstName" type="text"/>
+                                    </Form.Group>
+                                </Col>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label className={styles.FormLabel}>Last Name</Form.Label>
+                                        <Form.Control className={styles.FormControl} value={formState.lastName} onChange={handleChange} placeholder="Enter your last name" name="lastName" type="text"/>
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                            <Form.Group>
+                                <Form.Label className={styles.FormLabel}>Email</Form.Label>
+                                <Form.Control className={styles.FormControl} value={formState.email} onChange={handleChange} placeholder="Enter a valid email address" name="email" type="email"/>
+                            </Form.Group>
+                            <Form.Group>
+                                <Form.Label className={styles.FormLabel}>Password</Form.Label>
+                                <Form.Control className={styles.FormControl} value={formState.password} onChange={handleChange} placeholder="Enter a strong passwrod" name="password" type="password"/>
+                            </Form.Group>
+                            <button className={styles.Btn}>Subscribe</button>
+                        </Form>
+                        <p>Already have an account?</p>
+                        <Link to="/login">
+                            <button className={styles.LoginBtn}>
+                                Login
+                            </button>
+                        </Link>
+                    </div>
+                </Container>
         </div>
     )
 }

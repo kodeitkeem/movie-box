@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 
 
 function SciFiRow(props) {
-
+{/* 
     const [movieData, setMovieData ] = useState({
         page: 1,
         results: []
@@ -23,9 +23,10 @@ function SciFiRow(props) {
   useEffect(() => {
     getMovieData();
   }, []);
-
+*/}
   return (
       <>
+      {/* 
         <Row className={styles.Row}>
             <h2>{props.title}</h2>
         </Row>
@@ -36,6 +37,7 @@ function SciFiRow(props) {
                     </Col>
                 ))}
         </Row>
+        */}
     </>
   )
 

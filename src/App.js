@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { getUser,logout } from './services/userService';
 import {useEffect } from 'react';
-import { getMovieEndpoint } from './services/net-api';
+
 
 import './App.css';
 import Header from './components/Header';
@@ -20,20 +20,7 @@ import {Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
 function App(props) {
 
-  // const [movieData, setMovieData ] = useState([]);
-  // const [genres, setGenres] = useState([]);
-  // const [ monveGenres, setMovieGenres ] = useState([]);
-  
 
-  // async function getMovieData(){
-  //   const data = await getMovieEndpoint();
-  //   setMovieData(data);
-  //   console.log(data);
-  // }
-
-  // useEffect(() => {
-  //   getMovieData();
-  // }, []);
 
 
   const [ userSate, setUserState ] = useState({
@@ -59,7 +46,11 @@ function App(props) {
         <main>
           <Switch>
           <Route exact path="/" render={props => 
+              !userSate.user ?
               <PrePaywallPage handleLogout={handleLogout} user={userSate.user}/>
+              :
+              <Redirect to="/home" />
+
             } />
             <Route exact path="/home" render={props => 
               userSate.user ?

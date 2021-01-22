@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 
 
 function ActionRow(props) {
-
+{/* 
     const [movieData, setMovieData ] = useState({
         page: 1,
         results: []
@@ -24,8 +24,11 @@ function ActionRow(props) {
     getMovieData();
   }, []);
 
+  */}
+  
   return (
       <>
+      {/* 
         <Row className={styles.Row}>
             <h2>{props.title}</h2>
         </Row>
@@ -36,6 +39,7 @@ function ActionRow(props) {
                     </Col>
                 ))}
         </Row>
+                */}
     </>
   )
 

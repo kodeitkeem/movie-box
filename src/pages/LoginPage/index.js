@@ -1,5 +1,13 @@
 import { useState } from 'react';
 import { login } from '../../services/userService';
+import styles from './LoginPage.module.css';
+import Form from 'react-bootstrap/Form';
+import Header from '../../components/Header';
+import { Container } from 'react-bootstrap';
+import { PrimaryButton } from '../../components/PrimaryButton';
+import {Link} from 'react-router-dom';
+
+
 
 function LoginPage(props){
     const [formState, setFormState] = useState(getInitialFormState());
@@ -35,13 +43,32 @@ function LoginPage(props){
     }
 
     return (
-        <div className="Page">
-            <form onSubmit={handleSubmit}>
-                <input value={formState.email} onChange={handleChange} name="email" type="email"/>
-                <input value={formState.password} onChange={handleChange} name="password" type="password"/>
-                <button>Login</button>
-            </form>
+        <>
+        <div className={styles.Background}>
+            <Header handleLogout={props.handleLogout} user={props.user}/>
+            <Container>
+                <div className={styles.FormContainer}>
+                    <h2>Have an account already?</h2>
+                    <h5>Lets get you signed in. . .</h5>
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Group>
+                        <Form.Label className={styles.FormLabel}>Email address</Form.Label>
+                            <Form.Control className={styles.FormControl} value={formState.email} onChange={handleChange} placeholder="Enter your email" name="email" type="email"/>
+                        </Form.Group>
+                        <Form.Group>
+                        <Form.Label className={styles.FormLabel}>Password</Form.Label>
+                            <Form.Control className={styles.FormControl} value={formState.password} onChange={handleChange} placeholder="Enter your password" name="password" type="password"/>
+                        </Form.Group>
+                        <button className={styles.Btn}>Login</button>
+                    </Form>
+                    <p>Dont have an account?</p>
+                   
+                    <PrimaryButton />
+                    
+                </div>
+            </Container>
         </div>
+        </>
     )
 }
 

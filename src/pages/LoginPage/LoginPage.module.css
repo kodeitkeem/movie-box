@@ -1,0 +1,123 @@
+.Background {
+    background-image: linear-gradient(to bottom, rgba(233, 234, 235, 0.096), rgb(0, 0, 0)), url('../../background-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.Jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent !important;
+    margin: 100px auto;
+}
+
+.FormContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    flex-grow: 1;
+    margin: 80px auto 0px;
+    background-color: #111111;
+    padding: 60px 60px;
+    border-top: 5px solid #E50A15;
+}
+
+.FormContainer h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.FormContainer h4 {
+    font-size: 1.5rem;
+    color: #7A7A7E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px 20px;
+}
+
+.FormContainer h5 {
+    font-size: 1.5rem;
+    color: #7A7A7E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 0px 30px;
+    font-weight: 600;
+}
+
+.FormContainer p{
+    color: #7A7A7E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 0px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.FormLabel {
+    color: #FFFFFF;
+}
+
+.FormControl {
+    background-color: #1D1D1D !important;
+    border: 0px !important;
+    padding: 35px 15px !important;
+    color: #FFFFFF !important;
+}
+
+.Btn {
+    background-color: #111111 !important;
+    padding: 15px 45px !important;
+    border: 1px solid #E50A15 !important;
+    font-weight: 600 !important;
+    width: 100%;
+    border-radius: .3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    margin: 20px 0px;
+}
+
+.Btn a {
+    color: #FFFFFF;
+}
+
+.Btn a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Btn:hover {
+    background-color: #B5070F !important;
+    color: #FFFFFF;
+}
+
+
+.LoginBtn {
+    background-color: #E50A15 !important;
+    border: 1px solid #E50A15 !important;
+    padding: 15px 45px !important;
+    font-weight: 600 !important;
+    width: 100%;
+    border-radius: .3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+.LoginBtn a {
+    color: #FFFFFF;
+}
+
+.LoginBtn a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.LoginBtn:hover {
+    background-color: #B5070F !important;
+    color: #FFFFFF;
+}
+

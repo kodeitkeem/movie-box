@@ -1,10 +1,14 @@
 import styles from './Footer.module.css';
+import Container from 'react-bootstrap/Container';
+
 
  function Footer(props) {
     return (
-        <footer className={styles.Footer}>
-            <p>Copyright &copy; All right reserved. Movie Box {new Date().getFullYear()}</p>
-        </footer>
+        <Container>
+            <footer className={styles.Footer}>
+                <p>Copyright &copy; All right reserved. Movie Box {new Date().getFullYear()}</p>
+            </footer>
+        </Container>
     )
 }
 

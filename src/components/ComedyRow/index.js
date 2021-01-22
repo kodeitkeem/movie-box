@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 
 function ComedyRow(props) {
 
+    {/* 
     const [movieData, setMovieData ] = useState({
         page: 1,
         results: []
@@ -24,8 +25,11 @@ function ComedyRow(props) {
     getMovieData();
   }, []);
 
+   */}
+
   return (
       <>
+      {/* 
         <Row className={styles.Row}>
             <h2>{props.title}</h2>
         </Row>
@@ -36,9 +40,11 @@ function ComedyRow(props) {
                     </Col>
                 ))}
         </Row>
+        */}
     </>
   )
 
+               
 }
 
 export default ComedyRow;

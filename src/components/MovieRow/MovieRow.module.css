@@ -17,7 +17,7 @@
     position: relative;
     display: flex;
     flex-wrap: nowrap !important;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: left;
     overflow-y: hidden !important;
     overflow-x:scroll !important;

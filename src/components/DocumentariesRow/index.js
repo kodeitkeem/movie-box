@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 
 function DocumentariesRow(props) {
 
+{/* 
     const [movieData, setMovieData ] = useState({
         page: 1,
         results: []
@@ -23,9 +24,11 @@ function DocumentariesRow(props) {
   useEffect(() => {
     getMovieData();
   }, []);
+*/}
 
   return (
       <>
+      {/* 
         <Row className={styles.Row}>
             <h2>{props.title}</h2>
         </Row>
@@ -36,6 +39,7 @@ function DocumentariesRow(props) {
                     </Col>
                 ))}
         </Row>
+        */}
     </>
   )
 

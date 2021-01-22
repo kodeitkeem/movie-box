@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 
 
 function FamilyRow(props) {
-
+{/* 
     const [movieData, setMovieData ] = useState({
         page: 1,
         results: []
@@ -24,8 +24,10 @@ function FamilyRow(props) {
     getMovieData();
   }, []);
 
+*/}
   return (
       <>
+      {/* 
         <Row className={styles.Row}>
             <h2>{props.title}</h2>
         </Row>
@@ -36,6 +38,7 @@ function FamilyRow(props) {
                     </Col>
                 ))}
         </Row>
+        */}
     </>
   )
 

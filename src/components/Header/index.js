@@ -14,17 +14,17 @@ import {LinkContainer} from 'react-router-bootstrap'
         <header className={styles.Header}>
           <Container>
             <Navbar className={styles.Navbar}>
+            <Link to="/">
               <Navbar.Brand>
-                <Link to="/">
                   <img src={logo} className={styles.Logo} alt="logo" />
-                </Link>
               </Navbar.Brand>
+              </Link>
               <Nav className="ml-auto">
                   {
                     props.user ?
                  <>
                       <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                        <FormControl type="text" placeholder="Search" className={styles.FormControl} />
                       </Form>
                       <LinkContainer to="/dashboard">
                         <Nav.Link className={styles.NavLink}>
