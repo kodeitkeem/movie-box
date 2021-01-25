@@ -13,7 +13,7 @@ function MovieCard(props){
             <Card.Img src={`${imageUrl}${props.movie.poster_path}`} alt="Card image" />
             {/* 
             <Card.ImgOverlay>
-                <Card.Title>{props.movie?.name || props.movie?.original_title || props.movie?.original_name}</Card.Title>
+                <Card.Title>{props.movie?.name || props.movie.original_title || props.movie?.original_name}</Card.Title>
                 <Card.Text>
                 {props.movie.overview}
                 </Card.Text>

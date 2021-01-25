@@ -17,9 +17,9 @@ function HomePage(props){
         <div className={styles.Background}>
             <Header handleLogout={props.handleLogout} user={props.user}/>
             <Container >
-                <MovieRow title="Now Trending"/>
-                <OriginalsRow title="NETFLIX ORIGINALS" />
-                <ActionRow title="Action & Adventure" />
+                <MovieRow title="Now Trending" />
+                <OriginalsRow title="MOVIEBOX ORIGINALS" />
+                <ActionRow title="Action & Adventure" handleLogout={props.handleLogout} user={props.user} />
                 <ComedyRow title="Comedy" />
                 <DocumentariesRow title="Documentaries" />
                 <FamilyRow title="Family" />

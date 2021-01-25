@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 
 import PrePaywallPage from './pages/PrePaywallPage';
 import HomePage from './pages/HomePage';
+import MovieDetailPage from './pages/MovieDetailPage';
 import DashboardPage from './pages/DashboardPage';
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
@@ -19,9 +20,6 @@ import {Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
 
 function App(props) {
-
-
-
 
   const [ userSate, setUserState ] = useState({
     user: getUser()
@@ -55,6 +53,12 @@ function App(props) {
             <Route exact path="/home" render={props => 
               userSate.user ?
                 <HomePage handleLogout={handleLogout} user={userSate.user} />
+                :
+                <Redirect to="/login" />
+            } />
+            <Route exact path="/movie/:id" render={props => 
+              userSate.user ?
+                <MovieDetailPage handleLogout={handleLogout} user={userSate.user} />
                 :
                 <Redirect to="/login" />
             } />
