@@ -27,8 +27,8 @@
 * ![](https://img.shields.io/badge/MongoDB-informational?style=flat-square&logo=MongoDB&logoColor=FFFAF3&color=212121)
 
 ## &#x1f3ac; Getting Started
-* Application --> (https://memories-back-then.herokuapp.com/)
-* Trello Planning --> (https://trello.com/b/XH3SSkTT/memories-back-then)
+* Application --> (https://moviee-box.netlify.app/)
+* Trello Planning --> (https://trello.com/b/lZJGeH6S/movie-box-app)
 * Click the "Login" Button to login or "Signup" Button to create an account
 * Click on a card to see the movie details
 
