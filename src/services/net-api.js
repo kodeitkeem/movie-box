@@ -1,5 +1,5 @@
-const BASE_URL = process.env.REACT_APP_BASE_URL
-const API_KEY = process.env.REACT_APP_API_KEY
+const BASE_URL = "https://api.themoviedb.org/3"
+const API_KEY = "e1aceb53142b1701d29b1d5b96ba0a76"
 
 const endpoints = {
     getTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
