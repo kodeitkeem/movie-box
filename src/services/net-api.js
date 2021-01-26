@@ -19,17 +19,25 @@ function getGenres(movieId){
     })
 }
 
-// function getMovieEndpoint(){
-//     return fetch(BASE_URL + endpoints.getTrending).then(res => res.json()).catch(err => {
-//         console.log(err)
-//     });
-// }
+function getCredits(movieId){
+    return fetch(BASE_URL + `/movie/${movieId}/credits?api_key=${API_KEY}&language=en-US`).then(res => res.json())
+    .catch(err => {
+        console.log(err);
+    })
+}
 
-// function getOriginals(){
-//     return fetch(BASE_URL + endpoints.getOriginals).then(res => res.json()).catch(err => {
-//         console.log(err)
-//     });
-// }
+
+function getMovieEndpoint(){
+    return fetch(BASE_URL + endpoints.getTrending).then(res => res.json()).catch(err => {
+        console.log(err)
+    });
+}
+
+function getOriginals(){
+    return fetch(BASE_URL + endpoints.getOriginals).then(res => res.json()).catch(err => {
+        console.log(err)
+    });
+}
 
 function getAction(){
     return fetch(BASE_URL + endpoints.getAction).then(res => res.json()).catch(err => {
@@ -37,46 +45,47 @@ function getAction(){
     });
 }
 
-// function getComedy(){
-//     return fetch(BASE_URL + endpoints.getComedy).then(res => res.json()).catch(err => {
-//         console.log(err)
-//     });
-// }
+function getComedy(){
+    return fetch(BASE_URL + endpoints.getComedy).then(res => res.json()).catch(err => {
+        console.log(err)
+    });
+}
 
-// function getDocumentaries(){
-//     return fetch(BASE_URL + endpoints.getDocumentaries).then(res => res.json()).catch(err => {
-//         console.log(err)
-//     });
-// }
+function getDocumentaries(){
+    return fetch(BASE_URL + endpoints.getDocumentaries).then(res => res.json()).catch(err => {
+        console.log(err)
+    });
+}
 
-// function getFamily(){
-//     return fetch(BASE_URL + endpoints.getFamily).then(res => res.json()).catch(err => {
-//         console.log(err)
-//     });
-// }
+function getFamily(){
+    return fetch(BASE_URL + endpoints.getFamily).then(res => res.json()).catch(err => {
+        console.log(err)
+    });
+}
 
-// function getRomance(){
-//     return fetch(BASE_URL + endpoints.getRomance).then(res => res.json()).catch(err => {
-//         console.log(err)
-//     });
-// }
+function getRomance(){
+    return fetch(BASE_URL + endpoints.getRomance).then(res => res.json()).catch(err => {
+        console.log(err)
+    });
+}
 
-// function getSciFi(){
-//     return fetch(BASE_URL + endpoints.getSciFi).then(res => res.json()).catch(err => {
-//         console.log(err)
-//     });
-// }
+function getSciFi(){
+    return fetch(BASE_URL + endpoints.getSciFi).then(res => res.json()).catch(err => {
+        console.log(err)
+    });
+}
 
 
 
 export {
-//     getMovieEndpoint,
-//     getOriginals,
+    getMovieEndpoint,
+    getOriginals,
     getAction,
-    getGenres
-//     getComedy,
-//     getDocumentaries,
-//     getFamily,
-//     getRomance,
-//     getSciFi
+    getGenres,
+    getCredits,
+    getComedy,
+    getDocumentaries,
+    getFamily,
+    getRomance,
+    getSciFi
 }

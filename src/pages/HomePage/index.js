@@ -18,13 +18,12 @@ function HomePage(props){
             <Header handleLogout={props.handleLogout} user={props.user}/>
             <Container >
                 <MovieRow title="Now Trending" />
-                <OriginalsRow title="MOVIEBOX ORIGINALS" />
                 <ActionRow title="Action & Adventure" handleLogout={props.handleLogout} user={props.user} />
                 <ComedyRow title="Comedy" />
                 <DocumentariesRow title="Documentaries" />
                 <FamilyRow title="Family" />
-                <RomanceRow title="Romance" />
                 <SciFiRow title="Science Fiction" />
+                <OriginalsRow title="MOVIEBOX ORIGINALS" />
             </Container>
         </div>
     )

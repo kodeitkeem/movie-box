@@ -37,6 +37,8 @@ function getUser(){
     return getUserFromToken();
 }
 
+
+
 export {
     signup,
     login,

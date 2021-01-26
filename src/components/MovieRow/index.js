@@ -4,10 +4,11 @@ import Row from 'react-bootstrap/Row';
 import styles from './MovieRow.module.css';
 import { useState, useEffect } from 'react';
 import Col from 'react-bootstrap/Col';
+import {Link} from 'react-router-dom';
 
 
 function MovieRow(props) {
-{/* 
+
     const [movieData, setMovieData ] = useState({
         page: 1,
         results: []
@@ -23,21 +24,30 @@ function MovieRow(props) {
   useEffect(() => {
     getMovieData();
   }, []);
-*/}
+
   return (
       <>
-      {/* 
+       
         <Row className={styles.Row}>
             <h2>{props.title}</h2>
         </Row>
         <Row className={styles.MoviesRow}>
                 {movieData.results.map((movie, idx) => (
-                    <Col key={idx} md={2}>
-                        <MovieCard  movie={movie}/>
-                    </Col>
+                  <Col md={2} key={idx}>
+                    { movie.media_type ===  "movie" ?
+                    <Link  to={`/movie/${movie.id}`}>
+                        <MovieCard movie={movie} />
+                    </Link>
+                    :
+                    <Link  to={`/home/`}>
+                        <MovieCard movie={movie} />
+                    </Link>
+}
+                  </Col>
+                
                 ))}
         </Row>
-        */}
+        
     </>
   )
 

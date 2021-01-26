@@ -5,8 +5,7 @@ import { useState, useEffect } from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import {Link} from 'react-router-dom';
-import {Switch, Route, withRouter, Redirect } from 'react-router-dom';
-import MovieDetailPage from '../../pages/MovieDetailPage';
+
 
 function ActionRow(props) {
 
