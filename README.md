@@ -1,9 +1,11 @@
+![Github Banner](https://raw.githubusercontent.com/kodeitkeem/movie-box-client/master/public/application-screenshots/thumbnail.jpg)
+
+
 # Movie Box
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## &#x1f4a1; Motivation
-* 
+## &#x1f4a1; Overview
+* My motivation for this project was to create a Netflix/Hulu clone.. An exclusive movie streaming app that gives users the ability to stream their favorite movie and view some details about those movies.
 
 ## 	&#x1f511; Features 
 * A User can login to the application if they're already registered
