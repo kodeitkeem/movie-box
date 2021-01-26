@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { signup } from '../../services/userService';
 import Header from '../../components/Header';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Col } from 'react-bootstrap';
 import styles from '../../pages/LoginPage/LoginPage.module.css';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';

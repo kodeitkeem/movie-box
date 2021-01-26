@@ -57,7 +57,7 @@ const duration = convertTime(movieData.movie.runtime);
     getMovieData();
   }, []);
 
-  useEffect(()=>{
+  useEffect(()=> {
       getMovieCredits()
   }, []);
 

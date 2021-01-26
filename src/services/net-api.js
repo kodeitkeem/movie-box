@@ -8,7 +8,6 @@ const endpoints = {
     getComedy: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
     getDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
     getFamily: `/discover/movie?api_key=${API_KEY}&with_genres=10751`,
-    getRomance: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
     getSciFi: `/discover/movie?api_key=${API_KEY}&with_genres=878`,
 }
 
@@ -63,11 +62,7 @@ function getFamily(){
     });
 }
 
-function getRomance(){
-    return fetch(BASE_URL + endpoints.getRomance).then(res => res.json()).catch(err => {
-        console.log(err)
-    });
-}
+
 
 function getSciFi(){
     return fetch(BASE_URL + endpoints.getSciFi).then(res => res.json()).catch(err => {
@@ -86,6 +81,5 @@ export {
     getComedy,
     getDocumentaries,
     getFamily,
-    getRomance,
     getSciFi
 }

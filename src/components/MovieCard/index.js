@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './MovieCard.module.css';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 
 const imageUrl = 'https://image.tmdb.org/t/p/original/'
