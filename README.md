@@ -19,12 +19,12 @@
 * ![](https://img.shields.io/badge/CSS3-informational?style=flat-square&logo=CSS3&logoColor=FFFAF3&color=212121)
 * ![](https://img.shields.io/badge/JavaScript-informational?style=flat-square&logo=JavaScript&logoColor=FFFAF3&color=212121)
 * ![](https://img.shields.io/badge/React-informational?style=flat-square&logo=React&logoColor=FFFAF3&color=212121)
-* ![](https://img.shields.io/badge/JSON-Web-Tokens-informational?style=flat-square&logo=JSON-Web-Tokens&logoColor=FFFAF3&color=212121)
+* ![](https://img.shields.io/badge/JSONWebTokens-informational?style=flat-square&logo=JSONWebTokens&logoColor=FFFAF3&color=212121)
 * ![](https://img.shields.io/badge/Bootstrap4-informational?style=flat-square&logo=Bootstrap&logoColor=FFFAF3&color=212121)
 * ![](https://img.shields.io/badge/Node.js-informational?style=flat-square&logo=Node.js&logoColor=FFFAF3&color=212121)
 * ![](https://img.shields.io/badge/Express.js-informational?style=flat-square&logo=JavaScript&logoColor=FFFAF3&color=212121)
 * ![](https://img.shields.io/badge/MongoDB-informational?style=flat-square&logo=MongoDB&logoColor=FFFAF3&color=212121)
-* ![](https://img.shields.io/badge/MongoDB-informational?style=flat-square&logo=MongoDB&logoColor=FFFAF3&color=212121)
+
 
 ## &#x1f3ac; Getting Started
 * Application --> (https://moviee-box.netlify.app/)
