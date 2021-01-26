@@ -32,17 +32,9 @@ function convertTime(num){
 
     const imageUrl = `${BASE_URL}${movieData.movie.backdrop_path}` || `${BASE_URL}${movieData.movie.poster_path}`;
 
-    async function getMovieData(){
-    const data = await getGenres(movieId);
-    setMovieData({movie: data});
-    console.log(data);
-  }
+   
 
-  async function getMovieCredits(){
-      const credit = await getCredits(movieId);
-      setMovieCredit({cast: credit});
-      console.log(credit);
-  }
+  
 
 function movieMember(num){
     return movieCredit.cast.cast && movieCredit.cast.cast.slice(0, 4)[num].name
@@ -54,12 +46,22 @@ const releaseDate = movieData.movie.release_date && movieData.movie.release_date
 const duration = convertTime(movieData.movie.runtime);
 
   useEffect(() => {
+    async function getMovieData(){
+        const data = await getGenres(movieId);
+        setMovieData({movie: data});
+        console.log(data);
+      }
     getMovieData();
-  });
+  }, [movieId]);
 
   useEffect(()=>{
+    async function getMovieCredits(){
+        const credit = await getCredits(movieId);
+        setMovieCredit({cast: credit});
+        console.log(credit);
+    }
       getMovieCredits()
-  });
+  }, [movieId]);
 
 
     return (
